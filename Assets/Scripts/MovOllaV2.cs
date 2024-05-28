@@ -30,7 +30,7 @@ public class MovOllaV2 : MonoBehaviour
             contadorCambioSentido = tiempoCambiarDir;
             isMovHorario = -isMovHorario;
         }
-
+        
         //transform.Rotate(Vector3.up, currSpeedOlla * Time.deltaTime);
         rb.AddRelativeTorque(Vector3.down * velocidadOlla * Time.deltaTime * isMovHorario );
     }
