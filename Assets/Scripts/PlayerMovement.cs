@@ -25,10 +25,10 @@ public class PlayerMovement : MonoBehaviour
         Vector3.Normalize(moveInput);
 
         //rb.velocity = moveInput * velocidad;
-        Vector3 playerVel = rb.velocity;
-        playerVel.x = moveInput.x * velocidad;
-        playerVel.z = moveInput.z * velocidad;
-        rb.velocity = playerVel;
-        //rb.AddForce(moveInput * Time.deltaTime);
+        //Vector3 playerVel = rb.velocity;
+        //playerVel.x += moveInput.x * velocidad * Time.deltaTime;
+        //playerVel.z += moveInput.z * velocidad * Time.deltaTime;
+        //rb.velocity = playerVel;
+        rb.AddForce(moveInput * velocidad * Time.deltaTime);
     }
 }
