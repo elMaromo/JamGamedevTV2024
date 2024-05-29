@@ -450,6 +450,7 @@ GameObject:
   - component: {fileID: 654363036}
   - component: {fileID: 654363038}
   - component: {fileID: 654363039}
+  - component: {fileID: 654363040}
   m_Layer: 0
   m_Name: Olla
   m_TagString: Untagged
@@ -465,13 +466,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 654363033}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0.16484386, w: 0.9863197}
-  m_LocalPosition: {x: -1.29, y: 6.9, z: 0}
+  m_LocalRotation: {x: -0.055052344, y: 0.6112251, z: -0.06532247, w: 0.7868329}
+  m_LocalPosition: {x: -1.2899997, y: 6.9, z: 0}
   m_LocalScale: {x: 13.7, y: 0.9818653, z: 13.880263}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 903716727}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -18.976}
+  m_LocalEulerAnglesHint: {x: -0.388, y: 75.715, z: -9.794}
 --- !u!23 &654363036
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -563,6 +564,25 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 94
   m_CollisionDetection: 0
+--- !u!114 &654363040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 654363033}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 335ea3d96d4947044a3bcb1038639cfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  VelocidadRot: 1
+  ejexPOS: 20
+  ejexNE: -20
+  ejeyPOS: 20
+  ejeyNEG: -20
+  ejezPOS: 20
+  ejezNEG: -10
 --- !u!1 &813111415
 GameObject:
   m_ObjectHideFlags: 0
