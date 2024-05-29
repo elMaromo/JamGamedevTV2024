@@ -7,6 +7,9 @@ public class MovRotateOlla : MonoBehaviour
 {
     //public float VelocidadRot=1; //velocidad asignada
     public float ejexPOS,ejexNE,ejeyPOS,ejeyNEG,ejezPOS,ejezNEG; //tope ejes
+    
+    private float cambio;
+    private float contador;
     private bool RandRot; //boolean rand para girar
     private Vector3 randomDirection;
     private Vector3 Olla;
@@ -16,19 +19,22 @@ public class MovRotateOlla : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        contador=0;
         rb = GetComponent<Rigidbody>();
         Olla = new Vector3(39.22f, 73.81f, -8.4f);
 
         Debug.Log("Limites MIN:MAX " +  ejexPOS+","+ejexNE+","+ejeyPOS+","+ejeyNEG+","+ejezPOS+","+ejezNEG);
+        cambio= Random.Range(0,10);
+        Debug.Log("cambia cada: "+ cambio);
     }
 
     // Update is called once per frame
     //la mision es actualizar la rotacion de la olla en un tiempo random al pasar mas de 1seg
     void Update()
     {
-       RandRot= Random.value < 0.15f; //
-       if (RandRot==true){//se realiza el mov
+       if (contador >= cambio){
+       //RandRot= Random.value < 0.25f; //
+       //if (RandRot==true){//se realiza el mov
         // Generar una dirección de rotación aleatoria
         //variables rotacion
         float rot1 = Random.Range(ejexNE, ejexPOS);//eje x (-18,18)
@@ -46,10 +52,15 @@ public class MovRotateOlla : MonoBehaviour
         Debug.Log("VELOCIDAD DE MOVIMIENTO: " + (Time.deltaTime));
 
        //movimiento 
-        limites();
+        //limites();
         Quaternion deltaRotation = Quaternion.Euler(randomDirection * Time.fixedDeltaTime);
         rb.MoveRotation(rb.rotation * deltaRotation);
-       
+        cambio= Random.Range(0,10);
+        Debug.Log("cambia cada: "+ cambio);
+       }else{
+        contador = contador + Time.deltaTime;
+         Debug.Log("sugundos: "+ contador);
+        }
         
         //transform.Rotate(randomDirection * VelocidadRot * Time.fixedDeltaTime);
          
@@ -65,8 +76,8 @@ public class MovRotateOlla : MonoBehaviour
         //rb.MoveRotation(randomDirection * deltaRotation);
         //randomDirection /* * VelocidadRot * Time.deltaTime*/,;
         
-        Debug.Log("------------------------------------------------------");
-       }
+        
+       
     }
 
     private void limites() //no funciona
