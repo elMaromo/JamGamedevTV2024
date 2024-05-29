@@ -4,11 +4,15 @@ using UnityEngine;
 
 public class ChangeMaterialOfPlayer : MonoBehaviour
 {
-    public Material matDrunkl, matDrunk2, matDrunk3, matDrunk4;
+    public List<Texture2D> drunkTextures;
+    private Renderer rnd;
 
-    
-    void Update()
+    public void Start()
     {
-        
+        rnd = GetComponent<Renderer>();
+        int drunkSelected = GameManager.Instance.borrachoSeleccionado;
+        rnd.material.SetTexture("_MainTex", drunkTextures[drunkSelected]);
+        print(drunkSelected);
     }
+
 }

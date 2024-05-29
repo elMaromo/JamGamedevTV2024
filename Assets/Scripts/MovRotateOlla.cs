@@ -41,9 +41,9 @@ public class MovRotateOlla : MonoBehaviour
         
         // Aplicar la rotación continua en la dirección aleatoria
         //transform.Rotate(randomDirection * VelocidadRot * Time.deltaTime);
-        Debug.Log("------------------------------------------------------");
-        Debug.Log("ROTACION:" + rot1 + " : " + " : " + rot2 + " : " + rot3);
-        Debug.Log("VELOCIDAD DE MOVIMIENTO: " + (Time.deltaTime));
+        //Debug.Log("------------------------------------------------------");
+        //Debug.Log("ROTACION:" + rot1 + " : " + " : " + rot2 + " : " + rot3);
+        //Debug.Log("VELOCIDAD DE MOVIMIENTO: " + (Time.deltaTime));
 
        //movimiento 
         limites();
@@ -65,7 +65,7 @@ public class MovRotateOlla : MonoBehaviour
         //rb.MoveRotation(randomDirection * deltaRotation);
         //randomDirection /* * VelocidadRot * Time.deltaTime*/,;
         
-        Debug.Log("------------------------------------------------------");
+        //Debug.Log("------------------------------------------------------");
        }
     }
 

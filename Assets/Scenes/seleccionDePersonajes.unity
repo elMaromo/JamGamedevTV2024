@@ -272,7 +272,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 115335952}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1594658214}
+        m_TargetAssemblyTypeName: SelectDrunk, Assembly-CSharp
+        m_MethodName: selectD2
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &115335952
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -461,7 +473,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 631208157}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1594658214}
+        m_TargetAssemblyTypeName: SelectDrunk, Assembly-CSharp
+        m_MethodName: selectD3
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &631208157
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -582,7 +606,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 650943318}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1594658214}
+        m_TargetAssemblyTypeName: SelectDrunk, Assembly-CSharp
+        m_MethodName: selectD1
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &650943318
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -988,7 +1024,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1562312702}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1594658214}
+        m_TargetAssemblyTypeName: SelectDrunk, Assembly-CSharp
+        m_MethodName: selectD4
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1562312702
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1146,6 +1194,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18f5dbb0766564048a122b58cd81cece, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sceneName: JuanTest
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

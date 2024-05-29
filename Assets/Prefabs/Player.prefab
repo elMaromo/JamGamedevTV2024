@@ -149,7 +149,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4084d4340b97fd14fa1b0f4956ba74f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidad: 1000
+  velocidad: 800
   potenciaDeSalto: 0
 --- !u!1 &5160812662196590197
 GameObject:
@@ -163,6 +163,7 @@ GameObject:
   - component: {fileID: 2804116934720057512}
   - component: {fileID: 7149048168778071563}
   - component: {fileID: 5907177320409176286}
+  - component: {fileID: 6087130290897909393}
   m_Layer: 0
   m_Name: DrunkSprite
   m_TagString: Untagged
@@ -257,3 +258,20 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &6087130290897909393
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5160812662196590197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5d686ddc44e52540bd6c53d9ee2a77a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  drunkTextures:
+  - {fileID: 2800000, guid: c1145586c118bcb4f812066c513e8c65, type: 3}
+  - {fileID: 2800000, guid: 96ea398ad05781e408d3aea62c1a26ac, type: 3}
+  - {fileID: 2800000, guid: 994469523e063f84ba0fe6b8d87df8c1, type: 3}
+  - {fileID: 2800000, guid: 2f514af0c850dc946be991ae1040b028, type: 3}

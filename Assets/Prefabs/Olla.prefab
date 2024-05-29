@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 5640909118807598534}
   - component: {fileID: 9119281063210309637}
   - component: {fileID: 1269430885730077834}
+  - component: {fileID: 6871739799670761483}
   m_Layer: 0
   m_Name: Olla
   m_TagString: Untagged
@@ -102,7 +103,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 843a43ad7d012c442b67569b6a1f0db3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidadOlla: 10000
+  velocidadOlla: 5000
   tiempoCambiarDir: 10
 --- !u!54 &9119281063210309637
 Rigidbody:
@@ -129,7 +130,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 94
+  m_Constraints: 14
   m_CollisionDetection: 0
 --- !u!65 &1269430885730077834
 BoxCollider:
@@ -152,6 +153,24 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.0000002, y: 1.5150402, z: 1.0000004}
   m_Center: {x: 0.00000004047493, y: -0.24247916, z: -0.0000000815985}
+--- !u!114 &6871739799670761483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6718499805755780851}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 335ea3d96d4947044a3bcb1038639cfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ejexPOS: 45
+  ejexNE: 0
+  ejeyPOS: 45
+  ejeyNEG: 0
+  ejezPOS: 45
+  ejezNEG: 0
 --- !u!1001 &66169290610482877
 PrefabInstance:
   m_ObjectHideFlags: 0
