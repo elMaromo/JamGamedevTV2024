@@ -272,7 +272,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 115335952}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1594658214}
+        m_TargetAssemblyTypeName: SelectDrunk, Assembly-CSharp
+        m_MethodName: selectD2
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &115335952
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -311,6 +323,74 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 115335949}
   m_CullTransparentMesh: 1
+--- !u!1001 &619065846
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5793572254491007446, guid: 9ad588cfa3ac3324b908a4fe86e27ccf,
+        type: 3}
+      propertyPath: m_Name
+      value: GameManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916851978367983685, guid: 9ad588cfa3ac3324b908a4fe86e27ccf,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916851978367983685, guid: 9ad588cfa3ac3324b908a4fe86e27ccf,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916851978367983685, guid: 9ad588cfa3ac3324b908a4fe86e27ccf,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916851978367983685, guid: 9ad588cfa3ac3324b908a4fe86e27ccf,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916851978367983685, guid: 9ad588cfa3ac3324b908a4fe86e27ccf,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916851978367983685, guid: 9ad588cfa3ac3324b908a4fe86e27ccf,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916851978367983685, guid: 9ad588cfa3ac3324b908a4fe86e27ccf,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916851978367983685, guid: 9ad588cfa3ac3324b908a4fe86e27ccf,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916851978367983685, guid: 9ad588cfa3ac3324b908a4fe86e27ccf,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916851978367983685, guid: 9ad588cfa3ac3324b908a4fe86e27ccf,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9ad588cfa3ac3324b908a4fe86e27ccf, type: 3}
 --- !u!1 &631208154
 GameObject:
   m_ObjectHideFlags: 0
@@ -393,7 +473,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 631208157}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1594658214}
+        m_TargetAssemblyTypeName: SelectDrunk, Assembly-CSharp
+        m_MethodName: selectD3
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &631208157
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -514,7 +606,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 650943318}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1594658214}
+        m_TargetAssemblyTypeName: SelectDrunk, Assembly-CSharp
+        m_MethodName: selectD1
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &650943318
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -920,7 +1024,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1562312702}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1594658214}
+        m_TargetAssemblyTypeName: SelectDrunk, Assembly-CSharp
+        m_MethodName: selectD4
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1562312702
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -971,6 +1087,7 @@ GameObject:
   - component: {fileID: 1594658212}
   - component: {fileID: 1594658211}
   - component: {fileID: 1594658210}
+  - component: {fileID: 1594658214}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1065,6 +1182,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1594658214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1594658209}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18f5dbb0766564048a122b58cd81cece, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: JuanTest
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -1073,3 +1203,4 @@ SceneRoots:
   - {fileID: 1200837228}
   - {fileID: 1594658213}
   - {fileID: 16509964}
+  - {fileID: 619065846}
