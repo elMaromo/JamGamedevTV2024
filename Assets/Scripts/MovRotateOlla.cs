@@ -23,7 +23,7 @@ public class MovRotateOlla : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         Olla = new Vector3(39.22f, 73.81f, -8.4f);
 
-        Debug.Log("Limites MIN:MAX " +  ejexPOS+","+ejexNE+","+ejeyPOS+","+ejeyNEG+","+ejezPOS+","+ejezNEG);
+        //Debug.Log("Limites MIN:MAX " +  ejexPOS+","+ejexNE+","+ejeyPOS+","+ejeyNEG+","+ejezPOS+","+ejezNEG);
         cambio= Random.Range(0,4);
         //Debug.Log("cambia cada: "+ cambio);
     }

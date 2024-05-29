@@ -5,17 +5,43 @@ using UnityEngine;
 
 public class KillZone : MonoBehaviour
 {
-    int contador=0;
-    public void OnTriggerEnter( Collider other )
+    public GameObject hasPerdido, hasGanado;
+    public int numEnemigos;
+
+
+    private bool haTerminado = false;
+    private int contador = 0;
+
+    public void OnTriggerEnter(Collider other)
     {
-        if( other.gameObject.CompareTag("Player"))
+        if (!haTerminado)
         {
-            print("has perdido");
-        }
-        if (other.gameObject.CompareTag("enemy")) { 
-            print(other.gameObject.name +" eliminado");
-            Debug.Log(other.gameObject.name +" eliminado");
-            //contador
+            if (other.gameObject.CompareTag("Player"))
+            {
+                PerderFuncion();
             }
+            if (other.gameObject.CompareTag("enemy"))
+            {
+                contador++;
+
+                if (contador == numEnemigos)
+                {
+                    GanarFuncion();
+                }
+            }
+        }
+    }
+
+
+    public void PerderFuncion()
+    {
+        hasPerdido.SetActive(true);
+        haTerminado = true;
+    }
+
+    public void GanarFuncion()
+    {
+        hasGanado.SetActive(true);
+        haTerminado = true;
     }
 }
