@@ -10,6 +10,7 @@ public class MovRotateOlla : MonoBehaviour
     private bool RandRot;
     private Vector3 randomDirection;
     private Rigidbody rb;
+   
     // Start is called before the first frame update
     void Start()
     {
@@ -31,10 +32,15 @@ public class MovRotateOlla : MonoBehaviour
         // Aplicar la rotación continua en la dirección aleatoria
         //transform.Rotate(randomDirection * VelocidadRot * Time.deltaTime);
         Debug.Log("------------------------------------------------------");
-        Debug.Log("ROTACION:" + rot1 + "," + "," + rot2 + "," + rot3);
+        Debug.Log("ROTACION:" + rot1 + " : " + " : " + rot2 + " : " + rot3);
         Debug.Log("VELOCIDAD DE MOVIMIENTO: " + Time.deltaTime);
         
-        rb.transform.Rotate(randomDirection * VelocidadRot * Time.deltaTime);
+        Quaternion deltaRotation = Quaternion.Euler(randomDirection * Time.fixedDeltaTime);
+        rb.MoveRotation(rb.rotation * deltaRotation);
+
+
+        //rb.MoveRotation(randomDirection * deltaRotation);
+        //randomDirection /* * VelocidadRot * Time.deltaTime*/,;
         
         Debug.Log("------------------------------------------------------");
        }

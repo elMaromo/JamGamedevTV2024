@@ -141,12 +141,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   VelocidadRot: 1
-  ejexPOS: 400
-  ejexNE: -400
-  ejeyPOS: 400
-  ejeyNEG: -400
-  ejezPOS: 400
-  ejezNEG: -400
+  ejexPOS: 45
+  ejexNE: 0
+  ejeyPOS: 45
+  ejeyNEG: 0
+  ejezPOS: 45
+  ejezNEG: 0
 --- !u!1 &593196080
 GameObject:
   m_ObjectHideFlags: 0
