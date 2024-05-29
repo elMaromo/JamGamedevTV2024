@@ -13,9 +13,8 @@ GameObject:
   - component: {fileID: 7499467867622727054}
   - component: {fileID: 5298399448497845428}
   - component: {fileID: 2199003887095199633}
-  - component: {fileID: 1936923953289781934}
   m_Layer: 0
-  m_Name: Player
+  m_Name: Enemy1
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -137,20 +136,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
---- !u!114 &1936923953289781934
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3534548761281722540}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4084d4340b97fd14fa1b0f4956ba74f1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  velocidad: 800
-  potenciaDeSalto: 0
 --- !u!1 &5160812662196590197
 GameObject:
   m_ObjectHideFlags: 0
@@ -163,7 +148,7 @@ GameObject:
   - component: {fileID: 2804116934720057512}
   - component: {fileID: 7149048168778071563}
   - component: {fileID: 5907177320409176286}
-  - component: {fileID: 6087130290897909393}
+  - component: {fileID: 5334496448452236986}
   m_Layer: 0
   m_Name: DrunkSprite
   m_TagString: Untagged
@@ -258,7 +243,7 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &6087130290897909393
+--- !u!114 &5334496448452236986
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -267,9 +252,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 5160812662196590197}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c5d686ddc44e52540bd6c53d9ee2a77a, type: 3}
+  m_Script: {fileID: 11500000, guid: af5c5dea54cfbb64586c35cb536318e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  preferedDrunk: 1
   drunkTextures:
   - {fileID: 2800000, guid: c1145586c118bcb4f812066c513e8c65, type: 3}
   - {fileID: 2800000, guid: 96ea398ad05781e408d3aea62c1a26ac, type: 3}
