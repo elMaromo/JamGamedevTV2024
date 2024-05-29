@@ -1875,6 +1875,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5640909118807598534, guid: c0d1ea6ac001c164e839da635eeac3ac,
         type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5640909118807598534, guid: c0d1ea6ac001c164e839da635eeac3ac,
+        type: 3}
       propertyPath: velocidadOlla
       value: 4000
       objectReference: {fileID: 0}
@@ -1882,6 +1887,41 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Olla
+      objectReference: {fileID: 0}
+    - target: {fileID: 6871739799670761483, guid: c0d1ea6ac001c164e839da635eeac3ac,
+        type: 3}
+      propertyPath: ejexNE
+      value: -8000
+      objectReference: {fileID: 0}
+    - target: {fileID: 6871739799670761483, guid: c0d1ea6ac001c164e839da635eeac3ac,
+        type: 3}
+      propertyPath: ejexPOS
+      value: 8000
+      objectReference: {fileID: 0}
+    - target: {fileID: 6871739799670761483, guid: c0d1ea6ac001c164e839da635eeac3ac,
+        type: 3}
+      propertyPath: ejeyNEG
+      value: -8000
+      objectReference: {fileID: 0}
+    - target: {fileID: 6871739799670761483, guid: c0d1ea6ac001c164e839da635eeac3ac,
+        type: 3}
+      propertyPath: ejeyPOS
+      value: 8000
+      objectReference: {fileID: 0}
+    - target: {fileID: 6871739799670761483, guid: c0d1ea6ac001c164e839da635eeac3ac,
+        type: 3}
+      propertyPath: ejezNEG
+      value: -8000
+      objectReference: {fileID: 0}
+    - target: {fileID: 6871739799670761483, guid: c0d1ea6ac001c164e839da635eeac3ac,
+        type: 3}
+      propertyPath: ejezPOS
+      value: 8000
+      objectReference: {fileID: 0}
+    - target: {fileID: 6871739799670761483, guid: c0d1ea6ac001c164e839da635eeac3ac,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8215419231546003443, guid: c0d1ea6ac001c164e839da635eeac3ac,
         type: 3}
