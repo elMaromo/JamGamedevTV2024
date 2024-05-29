@@ -24,7 +24,7 @@ public class MovRotateOlla : MonoBehaviour
         Olla = new Vector3(39.22f, 73.81f, -8.4f);
 
         Debug.Log("Limites MIN:MAX " +  ejexPOS+","+ejexNE+","+ejeyPOS+","+ejeyNEG+","+ejezPOS+","+ejezNEG);
-        cambio= Random.Range(0,6);
+        cambio= Random.Range(0,4);
         Debug.Log("cambia cada: "+ cambio);
     }
 
@@ -55,7 +55,7 @@ public class MovRotateOlla : MonoBehaviour
         //limites();
         Quaternion deltaRotation = Quaternion.Euler(randomDirection * Time.fixedDeltaTime);
         rb.MoveRotation(rb.rotation * deltaRotation);
-        cambio= Random.Range(0,6);
+        cambio= Random.Range(0,4);
         Debug.Log("cambia cada: "+ cambio);
        }else{
         contador = contador + Time.deltaTime;
