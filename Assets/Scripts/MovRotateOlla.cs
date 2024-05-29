@@ -25,7 +25,7 @@ public class MovRotateOlla : MonoBehaviour
 
         Debug.Log("Limites MIN:MAX " +  ejexPOS+","+ejexNE+","+ejeyPOS+","+ejeyNEG+","+ejezPOS+","+ejezNEG);
         cambio= Random.Range(0,4);
-        Debug.Log("cambia cada: "+ cambio);
+        //Debug.Log("cambia cada: "+ cambio);
     }
 
     // Update is called once per frame
@@ -33,8 +33,6 @@ public class MovRotateOlla : MonoBehaviour
     void Update()
     {
        if (contador >= cambio){
-       //RandRot= Random.value < 0.25f; //
-       //if (RandRot==true){//se realiza el mov
         // Generar una dirección de rotación aleatoria
         //variables rotacion
         float rot1 = Random.Range(ejexNE, ejexPOS);//eje x (-18,18)
@@ -42,42 +40,15 @@ public class MovRotateOlla : MonoBehaviour
         float rot3 = Random.Range(ejezNEG, ejezPOS);//eje z (-30, -5)
         randomDirection = new Vector3(rot1,rot2,rot3).normalized;
         
-        //asigno el valor aleatorio a la olla
-        //Olla= new Vector3(rot1,rot2,rot3).normalized;
-        
-        // Aplicar la rotación continua en la dirección aleatoria
-        //transform.Rotate(randomDirection * VelocidadRot * Time.deltaTime);
-        //Debug.Log("------------------------------------------------------");
-        //Debug.Log("ROTACION:" + rot1 + " : " + " : " + rot2 + " : " + rot3);
-        //Debug.Log("VELOCIDAD DE MOVIMIENTO: " + (Time.deltaTime));
-
-       //movimiento 
-        //limites();
+  
         Quaternion deltaRotation = Quaternion.Euler(randomDirection * Time.fixedDeltaTime);
         rb.MoveRotation(rb.rotation * deltaRotation);
         cambio= Random.Range(0,4);
-        Debug.Log("cambia cada: "+ cambio);
+        //Debug.Log("cambia cada: "+ cambio);
        }else{
         contador = contador + Time.deltaTime;
-         Debug.Log("sugundos: "+ contador);
+         //Debug.Log("sugundos: "+ contador);
         }
-        
-        //transform.Rotate(randomDirection * VelocidadRot * Time.fixedDeltaTime);
-         
-         //le doy velocidad a la olla
-        //rb.velocity = Olla * VelocidadRot * Time.deltaTime;
-       
-         //Olla = transform.eulerAngles + (randomDirection * VelocidadRot * Time.deltaTime);
-        
-        
-
-
-
-        //rb.MoveRotation(randomDirection * deltaRotation);
-        //randomDirection /* * VelocidadRot * Time.deltaTime*/,;
-        
-        
-       
     }
 
     private void limites() //no funciona
