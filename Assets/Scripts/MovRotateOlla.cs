@@ -6,8 +6,8 @@ using UnityEditor.Callbacks;
 public class MovRotateOlla : MonoBehaviour
 {
     //public float VelocidadRot=1; //velocidad asignada
-    public float ejexPOS,ejexNE,ejeyPOS,ejeyNEG,ejezPOS,ejezNEG; //tope ejes
-    
+    //public float ejexPOS,ejexNE,ejeyPOS,ejeyNEG,ejezPOS,ejezNEG; //tope ejes
+    private float ejexPOS,ejexNE,ejeyPOS,ejeyNEG,ejezPOS,ejezNEG; //tope ejes
     private float cambio;
     private float contador;
     private bool RandRot; //boolean rand para girar
@@ -22,9 +22,9 @@ public class MovRotateOlla : MonoBehaviour
         contador=0;
         rb = GetComponent<Rigidbody>();
         Olla = new Vector3(39.22f, 73.81f, -8.4f);
-
+        Initopes();
         //Debug.Log("Limites MIN:MAX " +  ejexPOS+","+ejexNE+","+ejeyPOS+","+ejeyNEG+","+ejezPOS+","+ejezNEG);
-        cambio= Random.Range(0,4);
+        cambio= Random.Range(0,2);
         //Debug.Log("cambia cada: "+ cambio);
     }
 
@@ -43,7 +43,7 @@ public class MovRotateOlla : MonoBehaviour
   
         Quaternion deltaRotation = Quaternion.Euler(randomDirection * Time.fixedDeltaTime);
         rb.MoveRotation(rb.rotation * deltaRotation);
-        cambio= Random.Range(0,4);
+        cambio= Random.Range(0,2);
         //Debug.Log("cambia cada: "+ cambio);
        }else{
         contador = contador + Time.deltaTime;
@@ -51,6 +51,15 @@ public class MovRotateOlla : MonoBehaviour
         }
     }
 
+    private void Initopes(){
+        ejexPOS = 16000;
+        ejexNE = -16000;
+        ejeyPOS = 16000;
+        ejeyNEG = -16000;
+        ejezPOS = 16000;
+        ejezNEG = -16000;
+    }
+    
     private void limites() //no funciona
     {
         // Limita la rotación eje X
