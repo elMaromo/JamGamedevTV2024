@@ -95,7 +95,6 @@ public class movimientoPJ : MonoBehaviour
        Vector3 currentPosition = transform.position;
        //posicion centro
        Vector3 targetPosition = Vector3.zero;
-       Debug.Log("posicion central: " + targetPosition);
        // Mueve el personaje hacia el centro usando Lerp para un movimiento suave
         transform.position = Vector3.MoveTowards(transform.position, targetPosition, moviCenter * Time.deltaTime);
 
