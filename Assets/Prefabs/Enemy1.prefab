@@ -120,9 +120,10 @@ GameObject:
   - component: {fileID: 7499467867622727054}
   - component: {fileID: 5298399448497845428}
   - component: {fileID: 2199003887095199633}
+  - component: {fileID: 3668312573011045559}
   m_Layer: 0
   m_Name: Enemy1
-  m_TagString: Player
+  m_TagString: enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -201,7 +202,7 @@ CapsuleCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3534548761281722540}
-  m_Material: {fileID: 13400000, guid: 8865880729aecb14d97c2b15c59de6c6, type: 2}
+  m_Material: {fileID: 13400000, guid: 43409ec3a01ced742805f255588562b2, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -225,7 +226,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3534548761281722540}
   serializedVersion: 4
-  m_Mass: 1
+  m_Mass: 0.3
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -244,6 +245,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!114 &3668312573011045559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3534548761281722540}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2acd50704c4652b418f976baf5999a40, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moviPJ: 100
 --- !u!1 &5160812662196590197
 GameObject:
   m_ObjectHideFlags: 0
@@ -272,13 +286,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5160812662196590197}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.22417836, y: -0, z: -0, w: 0.97454816}
+  m_LocalRotation: {x: 0.17364816, y: 0, z: 0, w: 0.9848078}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1.9477417, y: 1.9477417, z: 1.9477417}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3940301758479931566}
-  m_LocalEulerAnglesHint: {x: 25.909, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 20, y: 0, z: 0}
 --- !u!33 &2804116934720057512
 MeshFilter:
   m_ObjectHideFlags: 0

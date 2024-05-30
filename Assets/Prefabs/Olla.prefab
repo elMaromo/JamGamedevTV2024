@@ -265,7 +265,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 843a43ad7d012c442b67569b6a1f0db3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidadOlla: 5000
+  velocidadOlla: 3000
   tiempoCambiarDir: 10
 --- !u!54 &9119281063210309637
 Rigidbody:
@@ -289,7 +289,7 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 0
+  m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 14
@@ -301,17 +301,11 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6718499805755780851}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 335ea3d96d4947044a3bcb1038639cfa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ejexPOS: 45
-  ejexNE: 0
-  ejeyPOS: 45
-  ejeyNEG: 0
-  ejezPOS: 45
-  ejezNEG: 0
 --- !u!1 &9023257826302995751
 GameObject:
   m_ObjectHideFlags: 0
