@@ -5,7 +5,7 @@ using UnityEngine;
 public class movimientoPJ : MonoBehaviour
 {
     public float moviPJ;
-    public float distPJ;
+    
 
     private GameObject player;
     private GameObject[] enemys;
@@ -15,7 +15,6 @@ public class movimientoPJ : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        moviPJ = 0.7f;
         player = GameObject.FindGameObjectsWithTag("Player")[0];
         enemys = GameObject.FindGameObjectsWithTag("enemy");
         rb = GetComponent<Rigidbody>();
