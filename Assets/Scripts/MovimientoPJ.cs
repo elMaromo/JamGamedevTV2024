@@ -10,12 +10,15 @@ public class movimientoPJ : MonoBehaviour
     private GameObject player;
     private GameObject[] enemys;
 
+    private Rigidbody rb;
+
     // Start is called before the first frame update
     void Start()
     {
         moviPJ = 0.7f;
         player = GameObject.FindGameObjectsWithTag("Player")[0];
         enemys = GameObject.FindGameObjectsWithTag("enemy");
+        rb = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
@@ -26,7 +29,6 @@ public class movimientoPJ : MonoBehaviour
        
         //busca enemigos
         GameObject closestEnemy = distanceToEnemys();
-        //distancia enemigo
         float closestDistanceEnemy = Vector3.Distance(closestEnemy.transform.position, transform.position);
 
         if (closestDistanceEnemy < closestDistancePlayer) //compara las distancias etre pj u jugador
@@ -61,10 +63,8 @@ public class movimientoPJ : MonoBehaviour
                 if (distanceEnemy < closestDistanceEnemy)
                 {
                     closestDistanceEnemy = distanceEnemy;
-                    closest = player;
+                    closest = enemy;
                 }
-
-                float distance = (transform.position - player.transform.position).sqrMagnitude;
             }
         }
         return closest;
@@ -73,7 +73,6 @@ public class movimientoPJ : MonoBehaviour
     void MoveTowards(GameObject target) //choque con jugadores
     {
         Vector3 direction = (target.transform.position - transform.position).normalized;
-        transform.position += direction * moviPJ * Time.deltaTime;
-
+        rb.AddForce(direction * moviPJ * Time.deltaTime );
     }
 }
