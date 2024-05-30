@@ -6,13 +6,10 @@ public class PlayerMovement : MonoBehaviour
 {
     public float velocidad;
     public float potenciaDeSalto;
-    
-    private Vector3 moveInput;
     private Rigidbody rb;
 
     public void Start()
     {
-        moveInput = new Vector3();
         rb = GetComponent<Rigidbody>();
     }
 
