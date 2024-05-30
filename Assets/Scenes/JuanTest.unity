@@ -1303,6 +1303,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5160812662196590197, guid: 8016802ded8395d40844a884cd53057d,
+        type: 3}
+      propertyPath: m_TagString
+      value: enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 5334496448452236986, guid: 8016802ded8395d40844a884cd53057d,
         type: 3}
       propertyPath: preferedDrunk
@@ -2197,7 +2202,7 @@ GameObject:
   - component: {fileID: 1379265285}
   m_Layer: 5
   m_Name: Canvas
-  m_TagString: Untagged
+  m_TagString: enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
