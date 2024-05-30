@@ -1173,7 +1173,7 @@ RectTransform:
   m_GameObject: {fileID: 744313076}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.08700812, y: 0.15004341, z: 0.21824495}
+  m_LocalScale: {x: 0.24147627, y: 0.87375736, z: 0.79113805}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 940785277}
@@ -1181,7 +1181,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 17.95139, y: 28.504501}
+  m_AnchoredPosition: {x: -0.40000153, y: 2}
   m_SizeDelta: {x: 299.99994, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &744313078
@@ -1260,8 +1260,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: fdeba8334a5811948b5b4773eec587cd, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1336,14 +1336,14 @@ RectTransform:
   m_GameObject: {fileID: 940785276}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.5083287, y: 1.4545454, z: 1}
+  m_LocalScale: {x: 0.90379465, y: 0.24977754, z: 0.27586204}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 744313077}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 285.81113, y: 1.1636581}
+  m_AnchoredPosition: {x: 178.97932, y: 32.15995}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &940785278
@@ -1368,8 +1368,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: "You have lost, \r\nRetry?"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 19d398c5b07e0ca4da69936b109179c8, type: 2}
+  m_sharedMaterial: {fileID: -2899579692331774372, guid: 19d398c5b07e0ca4da69936b109179c8,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1451,6 +1452,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2199003887095199633, guid: b61c5ae74b88d9849b49e482b64e9483,
+        type: 3}
+      propertyPath: m_Drag
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3534548761281722540, guid: b61c5ae74b88d9849b49e482b64e9483,
         type: 3}
       propertyPath: m_Name
