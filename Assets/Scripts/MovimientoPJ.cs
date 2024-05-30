@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class movimientoPJ : MonoBehaviour
 {
-    public float moviPJ;
+    private float moviPJ;
     private float closestDistancePlayer;
     private float closestDistanceEnemy; 
     private float distPJ;
     // Start is called before the first frame update
     void Start()
     {
-        
+        moviPJ=0.7f;
     }
 
     // Update is called once per frame
