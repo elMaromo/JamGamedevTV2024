@@ -369,8 +369,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2acd50704c4652b418f976baf5999a40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moviPJ: 400
-  moviCenter: 400
+  moviPJ: 150
+  moviCenter: 0.7
   contadorPJ: 0
   distaciaPJ: 0
   contadorJugador: 0
@@ -613,7 +613,7 @@ PrefabInstance:
     - target: {fileID: 2199003887095199633, guid: 8016802ded8395d40844a884cd53057d,
         type: 3}
       propertyPath: m_Mass
-      value: 0.5
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 2199003887095199633, guid: 8016802ded8395d40844a884cd53057d,
         type: 3}
@@ -630,10 +630,15 @@ PrefabInstance:
       propertyPath: m_TagString
       value: enemy
       objectReference: {fileID: 0}
+    - target: {fileID: 3668312573011045559, guid: 8016802ded8395d40844a884cd53057d,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3940301758479931566, guid: 8016802ded8395d40844a884cd53057d,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.11
+      value: 0.909
       objectReference: {fileID: 0}
     - target: {fileID: 3940301758479931566, guid: 8016802ded8395d40844a884cd53057d,
         type: 3}
@@ -680,7 +685,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3668312573011045559, guid: 8016802ded8395d40844a884cd53057d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -1186,8 +1192,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2acd50704c4652b418f976baf5999a40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moviPJ: 400
-  moviCenter: 400
+  moviPJ: 150
+  moviCenter: 0.7
   contadorPJ: 0
   distaciaPJ: 0
   contadorJugador: 0
@@ -1314,7 +1320,7 @@ PrefabInstance:
     - target: {fileID: 2199003887095199633, guid: 8016802ded8395d40844a884cd53057d,
         type: 3}
       propertyPath: m_Mass
-      value: 0.5
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 2199003887095199633, guid: 8016802ded8395d40844a884cd53057d,
         type: 3}
@@ -1330,6 +1336,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TagString
       value: enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 3668312573011045559, guid: 8016802ded8395d40844a884cd53057d,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3940301758479931566, guid: 8016802ded8395d40844a884cd53057d,
         type: 3}
@@ -1386,7 +1397,8 @@ PrefabInstance:
       propertyPath: preferedDrunk
       value: 3
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3668312573011045559, guid: 8016802ded8395d40844a884cd53057d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -1732,8 +1744,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2acd50704c4652b418f976baf5999a40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moviPJ: 400
-  moviCenter: 400
+  moviPJ: 150
+  moviCenter: 0.7
   contadorPJ: 0
   distaciaPJ: 0
   contadorJugador: 0
@@ -1883,12 +1895,17 @@ PrefabInstance:
     - target: {fileID: 1936923953289781934, guid: b61c5ae74b88d9849b49e482b64e9483,
         type: 3}
       propertyPath: velocidad
-      value: 400
+      value: 350
       objectReference: {fileID: 0}
     - target: {fileID: 2199003887095199633, guid: b61c5ae74b88d9849b49e482b64e9483,
         type: 3}
       propertyPath: m_Drag
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2199003887095199633, guid: b61c5ae74b88d9849b49e482b64e9483,
+        type: 3}
+      propertyPath: m_Mass
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3534548761281722540, guid: b61c5ae74b88d9849b49e482b64e9483,
         type: 3}
@@ -2082,8 +2099,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2acd50704c4652b418f976baf5999a40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moviPJ: 400
-  moviCenter: 400
+  moviPJ: 150
+  moviCenter: 0.7
   contadorPJ: 0
   distaciaPJ: 0
   contadorJugador: 0
@@ -2418,7 +2435,7 @@ PrefabInstance:
     - target: {fileID: 2199003887095199633, guid: 8016802ded8395d40844a884cd53057d,
         type: 3}
       propertyPath: m_Mass
-      value: 0.5
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 2199003887095199633, guid: 8016802ded8395d40844a884cd53057d,
         type: 3}
@@ -2428,12 +2445,17 @@ PrefabInstance:
     - target: {fileID: 3534548761281722540, guid: 8016802ded8395d40844a884cd53057d,
         type: 3}
       propertyPath: m_Name
-      value: Enemy6
+      value: Enemy5
       objectReference: {fileID: 0}
     - target: {fileID: 3534548761281722540, guid: 8016802ded8395d40844a884cd53057d,
         type: 3}
       propertyPath: m_TagString
       value: enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 3668312573011045559, guid: 8016802ded8395d40844a884cd53057d,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3940301758479931566, guid: 8016802ded8395d40844a884cd53057d,
         type: 3}
@@ -2503,9 +2525,10 @@ PrefabInstance:
     - target: {fileID: 5334496448452236986, guid: 8016802ded8395d40844a884cd53057d,
         type: 3}
       propertyPath: preferedDrunk
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3668312573011045559, guid: 8016802ded8395d40844a884cd53057d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -2710,8 +2733,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2acd50704c4652b418f976baf5999a40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moviPJ: 400
-  moviCenter: 400
+  moviPJ: 150
+  moviCenter: 0.7
   contadorPJ: 0
   distaciaPJ: 0
   contadorJugador: 0
@@ -2738,7 +2761,7 @@ PrefabInstance:
     - target: {fileID: 2199003887095199633, guid: 8016802ded8395d40844a884cd53057d,
         type: 3}
       propertyPath: m_Mass
-      value: 0.5
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 2199003887095199633, guid: 8016802ded8395d40844a884cd53057d,
         type: 3}
@@ -2754,6 +2777,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TagString
       value: enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 3668312573011045559, guid: 8016802ded8395d40844a884cd53057d,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3940301758479931566, guid: 8016802ded8395d40844a884cd53057d,
         type: 3}
@@ -3018,7 +3046,7 @@ PrefabInstance:
     - target: {fileID: 2199003887095199633, guid: 8016802ded8395d40844a884cd53057d,
         type: 3}
       propertyPath: m_Mass
-      value: 0.5
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 2199003887095199633, guid: 8016802ded8395d40844a884cd53057d,
         type: 3}
@@ -3034,6 +3062,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TagString
       value: enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 3668312573011045559, guid: 8016802ded8395d40844a884cd53057d,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3940301758479931566, guid: 8016802ded8395d40844a884cd53057d,
         type: 3}
@@ -3090,7 +3123,8 @@ PrefabInstance:
       propertyPath: preferedDrunk
       value: 4
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3668312573011045559, guid: 8016802ded8395d40844a884cd53057d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
