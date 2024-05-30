@@ -20,8 +20,8 @@ public class KillZone : MonoBehaviour
 
     public void OnTriggerEnter(Collider other)
     {
-        //if (!haTerminado)
-        //{
+        if (!haTerminado)
+        {
             if (other.gameObject.CompareTag("Player"))
             {
                 PerderFuncion();
@@ -37,7 +37,7 @@ public class KillZone : MonoBehaviour
                     GanarFuncion();
                 }
             }
-        //}
+        }
     }
 
     public void Update()

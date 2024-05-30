@@ -31,6 +31,18 @@ public class SelectDrunk : MonoBehaviour
         LoadSceneOfGameplay();
     }
 
+    public void selectD5()
+    {
+        GameManager.Instance.borrachoSeleccionado = 4;
+        LoadSceneOfGameplay();
+    }
+
+    public void selectD6()
+    {
+        GameManager.Instance.borrachoSeleccionado = 5;
+        LoadSceneOfGameplay();
+    }
+
     public void LoadSceneOfGameplay()
     {
         SceneManager.LoadScene(sceneName);

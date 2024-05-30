@@ -2327,7 +2327,7 @@ Transform:
   m_GameObject: {fileID: 1253067024}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.38, z: 0}
+  m_LocalPosition: {x: 0, y: 0.17, z: 0}
   m_LocalScale: {x: 43.6669, y: 1, z: 34.854877}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2348,11 +2348,13 @@ MonoBehaviour:
   hasPerdido: {fileID: 744313076}
   hasGanado: {fileID: 1189818785}
   hasGanadoText: {fileID: 168625615}
-  numEnemigos: 3
+  numEnemigos: 5
   losePositions:
   - {fileID: 1532750938}
   - {fileID: 572155677}
   - {fileID: 708149005}
+  - {fileID: 1460855088}
+  - {fileID: 770825813}
 --- !u!1 &1379265280
 GameObject:
   m_ObjectHideFlags: 0

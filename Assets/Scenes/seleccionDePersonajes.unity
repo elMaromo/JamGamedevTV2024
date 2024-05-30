@@ -1327,7 +1327,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1594658214}
         m_TargetAssemblyTypeName: SelectDrunk, Assembly-CSharp
-        m_MethodName: selectD4
+        m_MethodName: selectD6
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2367,7 +2367,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1594658214}
         m_TargetAssemblyTypeName: SelectDrunk, Assembly-CSharp
-        m_MethodName: selectD4
+        m_MethodName: selectD5
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
