@@ -6,54 +6,38 @@ using UnityEngine.UI;
 
 public class SoundOnOff : MonoBehaviour
 {
-    public Boolean muteButton;
+    public Boolean muteButton=false; //audio activado
     public bool isMuted;
     // Start is called before the first frame update
     void Start()
     {
-        isMuted=false;
+        //empieza con el audio activado
+        //isMuted=false;
         //AddListener(ToggleMute);
     }
 
     public void Onclick(){
         if(muteButton==false){
-            muteButton=true;
-            Update();
+            Mute();//mutea audio
         }
         if(muteButton==true){
-           muteButton=false;
-            Update(); 
-        }
-    }
-    void Update(){
-        if (isMuted == true){
-            ToggleMute();
-        }
-        if(isMuted == false)
-        {
             SoundOn();
         }
     }
     //
-    void ToggleMute()
+    void Mute()
     {
-        if(isMuted == true){
             AudioSource[] allAudioSources = FindObjectsOfType<AudioSource>();
-            foreach (AudioSource audioSource in allAudioSources)
+            foreach (AudioSource audioSourceOff in allAudioSources)
             {
-                audioSource.mute = isMuted;
+                audioSourceOff.Pause(); 
             }
-
-        }
     }
     void SoundOn(){
-        if(isMuted == false){
             AudioSource[] allAudioSources = FindObjectsOfType<AudioSource>();
-            foreach (AudioSource audioSource in allAudioSources)
+            foreach (AudioSource audioSourceOn in allAudioSources)
             {
-                audioSource.Play();
+                audioSourceOn.Play();
             }
-
         }
-    }
 }
