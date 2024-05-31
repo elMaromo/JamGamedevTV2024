@@ -15,6 +15,7 @@ public class KillZone : MonoBehaviour
 
     public AudioSource audioGanar;
     public AudioSource audioPerder;
+    public AudioSource grito;
 
 
     private float cuentaTiempo = 0;
@@ -32,6 +33,7 @@ public class KillZone : MonoBehaviour
             if (other.gameObject.CompareTag("enemy"))
             {
                 contadorEnemigos++;
+                grito.Play();
 
                 SendEnemyToStart( other.gameObject );
 
