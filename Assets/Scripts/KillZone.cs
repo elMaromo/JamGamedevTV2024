@@ -13,6 +13,9 @@ public class KillZone : MonoBehaviour
     public int numEnemigos;
     public List<Transform> losePositions;
 
+    public AudioSource audioGanar;
+    public AudioSource audioPerder;
+
 
     private float cuentaTiempo = 0;
     private bool haTerminado = false;
@@ -53,6 +56,7 @@ public class KillZone : MonoBehaviour
     {
         hasPerdido.SetActive(true);
         haTerminado = true;
+        audioPerder.Play();
     }
 
     public void GanarFuncion()
@@ -61,6 +65,7 @@ public class KillZone : MonoBehaviour
         hasGanadoText.text = "hasGanado en " + cuentaTiempo + " segundos";
         hasGanado.SetActive(true);
         haTerminado = true;
+        audioGanar.Play();
     }
 
 
