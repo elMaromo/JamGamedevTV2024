@@ -5,14 +5,14 @@ using UnityEngine;
 public class movimientoPJ : MonoBehaviour
 {
     public float moviPJ;
-    public float moviCenter;
-    
+    public float moToCenter;
+
     //pruebas
-    public int contadorPJ;
-    public float distaciaPJ;
-    public int contadorJugador;
-    public float distanciaJugador;
-    
+    private int contadorPJ;
+    private float distaciaPJ;
+    private int contadorJugador;
+    private float distanciaJugador;
+
     //---------------------------------
 
     private GameObject player;
@@ -23,8 +23,8 @@ public class movimientoPJ : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        contadorPJ=0;
-        contadorJugador=0;
+        contadorPJ = 0;
+        contadorJugador = 0;
         player = GameObject.FindGameObjectsWithTag("Player")[0];
         enemys = GameObject.FindGameObjectsWithTag("enemy");
         rb = GetComponent<Rigidbody>();
@@ -35,21 +35,21 @@ public class movimientoPJ : MonoBehaviour
     {
         //distancia jugador
         float closestDistancePlayer = distanceToPlayer();
-        
+
         //busca enemigos
         GameObject closestEnemy = distanceToEnemys();
         float closestDistanceEnemy = Vector3.Distance(closestEnemy.transform.position, transform.position);
-        distaciaPJ=closestDistanceEnemy;
-        distanciaJugador=closestDistancePlayer;
+        distaciaPJ = closestDistanceEnemy;
+        distanciaJugador = closestDistancePlayer;
         if (closestDistanceEnemy < closestDistancePlayer) //compara las distancias etre pj y jugador
         {
             MoveTowards(closestEnemy);
-            contadorPJ ++;
+            contadorPJ++;
         }
         else
         {
             MoveTowards(player);
-            contadorJugador ++;
+            contadorJugador++;
         }
         moviCentro();
     }
@@ -64,11 +64,11 @@ public class movimientoPJ : MonoBehaviour
     GameObject distanceToEnemys() //busca enemigos
     {
         //busca enemigos
-        GameObject closest = new GameObject();
+        GameObject closest = null;
         float distanceEnemy;
         float closestDistanceEnemy = Mathf.Infinity; //distancia jugador
 
-        foreach ( GameObject enemy in enemys)
+        foreach (GameObject enemy in enemys)
         {
             if (enemy != gameObject) // Evitar compararse con sí mismo
             {
@@ -87,16 +87,18 @@ public class movimientoPJ : MonoBehaviour
     void MoveTowards(GameObject target) //choque con jugadores
     {
         Vector3 direction = (target.transform.position - transform.position).normalized;
-        rb.AddForce(direction * moviPJ * Time.deltaTime );
+        rb.AddForce(direction * moviPJ * Time.deltaTime);
     }
-    
-    //movimiento hacia el centro
-    void moviCentro(){
-       Vector3 currentPosition = transform.position;
-       //posicion centro
-       Vector3 targetPosition = Vector3.zero;
-       // Mueve el personaje hacia el centro usando Lerp para un movimiento suave
-        transform.position = Vector3.MoveTowards(transform.position, targetPosition, moviCenter * Time.deltaTime);
 
+    //movimiento hacia el centro
+    void moviCentro()
+    {
+
+        //posicion centro
+        Vector3 targetPosition = Vector3.zero;
+        targetPosition.y = 1.5f;
+        Vector3 direction = (targetPosition - transform.position).normalized;
+        rb.AddForce(direction * moToCenter * Time.deltaTime);
+        //transform.position = Vector3.MoveTowards(transform.position, targetPosition, moviCenter * Time.deltaTime);
     }
 }

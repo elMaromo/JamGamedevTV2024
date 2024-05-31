@@ -9,7 +9,7 @@ public class Colisiones : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         if(collision.gameObject.tag =="enemy"){
-            audioColision.Play();
+            //audioColision.Play();
         }
     }
 }

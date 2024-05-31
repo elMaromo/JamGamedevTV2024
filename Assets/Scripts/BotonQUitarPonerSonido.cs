@@ -1,14 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class BotonQUitarPonerSonido : MonoBehaviour
 {
+    public GameObject imageSoundObject;
+    public Sprite soundSprite;
+    public Sprite noSoundSprite;
+
     private AudioListener audioListener;
+    private Image imageSound;
 
     void Start()
     {
-        // Obtén el componente AudioListener del GameObject al que está adjunto este script
+        // Obtï¿½n el componente AudioListener del GameObject al que estï¿½ adjunto este script
+        imageSound = imageSoundObject.GetComponent<Image>();
+
         audioListener = GetComponent<AudioListener>();
 
         if (audioListener == null)
@@ -17,12 +25,21 @@ public class BotonQUitarPonerSonido : MonoBehaviour
         }
     }
 
-    // Método para alternar el estado del AudioListener
+    // Mï¿½todo para alternar el estado del AudioListener
     public void ToggleAudioListener()
     {
         if (audioListener != null)
         {
             audioListener.enabled = !audioListener.enabled;
+
+            if (audioListener.enabled)
+            {
+                imageSound.sprite = soundSprite;
+            }
+            else
+            {
+                imageSound.sprite = noSoundSprite;
+            }
         }
     }
 }

@@ -717,7 +717,7 @@ PrefabInstance:
     - target: {fileID: 2199003887095199633, guid: 8016802ded8395d40844a884cd53057d,
         type: 3}
       propertyPath: m_Drag
-      value: 5
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 2199003887095199633, guid: 8016802ded8395d40844a884cd53057d,
         type: 3}
@@ -948,7 +948,7 @@ PrefabInstance:
     - target: {fileID: 2199003887095199633, guid: 8016802ded8395d40844a884cd53057d,
         type: 3}
       propertyPath: m_Drag
-      value: 5
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 2199003887095199633, guid: 8016802ded8395d40844a884cd53057d,
         type: 3}
@@ -1792,7 +1792,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: dbf06cbe9f9cadc4c809bfaf7ae941ca, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.4
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -2037,12 +2037,12 @@ PrefabInstance:
     - target: {fileID: 1936923953289781934, guid: b61c5ae74b88d9849b49e482b64e9483,
         type: 3}
       propertyPath: velocidad
-      value: 700
+      value: 1000
       objectReference: {fileID: 0}
     - target: {fileID: 2199003887095199633, guid: b61c5ae74b88d9849b49e482b64e9483,
         type: 3}
       propertyPath: m_Drag
-      value: 2
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 2199003887095199633, guid: b61c5ae74b88d9849b49e482b64e9483,
         type: 3}
@@ -2273,11 +2273,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moviPJ: 10
-  moviCenter: 0.4
-  contadorPJ: 0
-  distaciaPJ: 0
-  contadorJugador: 0
-  distanciaJugador: 0
+  moToCenter: 4
 --- !u!114 &1071899292
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2316,11 +2312,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moviPJ: 10
-  moviCenter: 0.4
-  contadorPJ: 0
-  distaciaPJ: 0
-  contadorJugador: 0
-  distanciaJugador: 0
+  moToCenter: 4
 --- !u!114 &1122696814
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2941,7 +2933,7 @@ PrefabInstance:
     - target: {fileID: 2199003887095199633, guid: 8016802ded8395d40844a884cd53057d,
         type: 3}
       propertyPath: m_Drag
-      value: 5
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 2199003887095199633, guid: 8016802ded8395d40844a884cd53057d,
         type: 3}
@@ -3164,11 +3156,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moviPJ: 10
-  moviCenter: 0.4
-  contadorPJ: 0
-  distaciaPJ: 0
-  contadorJugador: 0
-  distanciaJugador: 0
+  moToCenter: 4
 --- !u!114 &1447041254
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3454,11 +3442,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moviPJ: 10
-  moviCenter: 0.4
-  contadorPJ: 0
-  distaciaPJ: 0
-  contadorJugador: 0
-  distanciaJugador: 0
+  moToCenter: 4
 --- !u!114 &1697073597
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3489,7 +3473,7 @@ PrefabInstance:
     - target: {fileID: 2199003887095199633, guid: 8016802ded8395d40844a884cd53057d,
         type: 3}
       propertyPath: m_Drag
-      value: 5
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 2199003887095199633, guid: 8016802ded8395d40844a884cd53057d,
         type: 3}
@@ -3598,11 +3582,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moviPJ: 10
-  moviCenter: 0.4
-  contadorPJ: 0
-  distaciaPJ: 0
-  contadorJugador: 0
-  distanciaJugador: 0
+  moToCenter: 4
 --- !u!114 &1902756795
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3921,6 +3901,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78b944e051cf6b743a2ee4084493623c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  imageSoundObject: {fileID: 977711155}
+  soundSprite: {fileID: 21300000, guid: 051576c41f2086d488d86d5466968290, type: 3}
+  noSoundSprite: {fileID: 21300000, guid: ec1cb059ccc85264aa3959a0047f8e8a, type: 3}
 --- !u!1001 &2097131926
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3932,7 +3915,7 @@ PrefabInstance:
     - target: {fileID: 2199003887095199633, guid: 8016802ded8395d40844a884cd53057d,
         type: 3}
       propertyPath: m_Drag
-      value: 5
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 2199003887095199633, guid: 8016802ded8395d40844a884cd53057d,
         type: 3}
@@ -4041,7 +4024,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 2e2eca5889f1ec943b0f088ee4334a96, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.4
   m_Pitch: 1
   Loop: 0
   Mute: 0
