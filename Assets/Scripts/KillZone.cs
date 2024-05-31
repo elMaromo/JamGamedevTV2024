@@ -64,7 +64,7 @@ public class KillZone : MonoBehaviour
     public void GanarFuncion()
     {
         print(cuentaTiempo);
-        hasGanadoText.text = "hasGanado en " + cuentaTiempo + " segundos";
+        hasGanadoText.text = cuentaTiempo.ToString("F2") + " Seconds";
         hasGanado.SetActive(true);
         haTerminado = true;
         audioGanar.Play();
