@@ -6,15 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 99c9720ab356a0642a771bea13969a05
+    path: Assets/Scenes/Inicio.unity
+    guid: bb74d2c18d2f5f2439becd03b8fd806d
   - enabled: 1
     path: Assets/Scenes/seleccionDePersonajes.unity
     guid: f8d100468d27883429a9112cc90be803
   - enabled: 1
     path: Assets/Scenes/JuanTest.unity
     guid: 1fdf54b8f4b097245aa0561432bd5667
-  - enabled: 1
-    path: Assets/Scenes/Inicio.unity
-    guid: bb74d2c18d2f5f2439becd03b8fd806d
   m_configObjects: {}

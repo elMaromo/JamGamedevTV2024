@@ -12,6 +12,7 @@ public class KillZone : MonoBehaviour
     public TextMeshProUGUI hasGanadoText;
     public int numEnemigos;
     public List<Transform> losePositions;
+    public MoveCamera moveCameraScript;
 
     public AudioSource audioGanar;
     public AudioSource audioPerder;
@@ -59,6 +60,8 @@ public class KillZone : MonoBehaviour
         hasPerdido.SetActive(true);
         haTerminado = true;
         audioPerder.Play();
+
+        moveCameraScript.EndGame();
     }
 
     public void GanarFuncion()
@@ -68,6 +71,8 @@ public class KillZone : MonoBehaviour
         hasGanado.SetActive(true);
         haTerminado = true;
         audioGanar.Play();
+
+        moveCameraScript.EndGame();
     }
 
 
