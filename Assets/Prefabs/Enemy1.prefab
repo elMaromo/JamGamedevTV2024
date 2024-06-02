@@ -257,6 +257,7 @@ GameObject:
   - component: {fileID: 7149048168778071563}
   - component: {fileID: 5907177320409176286}
   - component: {fileID: 5334496448452236986}
+  - component: {fileID: 5211231130826253515}
   m_Layer: 0
   m_Name: DrunkSprite
   m_TagString: Untagged
@@ -371,3 +372,17 @@ MonoBehaviour:
   - {fileID: 2800000, guid: 2f514af0c850dc946be991ae1040b028, type: 3}
   - {fileID: 2800000, guid: b54548d3ca95ca6449b6071419bb79d0, type: 3}
   - {fileID: 2800000, guid: 20c25cdd10674234ba713f35e72e3a7b, type: 3}
+--- !u!114 &5211231130826253515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5160812662196590197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1b840e8e1c6af148b451f2cd2123621, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotateAngle: 15
+  duration: 1
